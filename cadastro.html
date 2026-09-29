@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - ONG Esperança</title>
     <link rel="stylesheet" href="ong.css">
-
 </head>
-<body>
 
+<body>
 
     <header>
         <h1>ONG Esperança</h1>
+
         <nav>
             <button class="menu-toggle" onclick="abrirMenu()">☰</button>
+
             <div class="menu">
                 <a href="index.html">Início</a>
+
                 <div class="dropdown">
                     <a href="projetos.html">Projetos ▼</a>
 
@@ -24,19 +26,22 @@
                         <a href="#">Voluntariado</a>
                     </div>
                 </div>
+
                 <a href="cadastro.html">Cadastro</a>
             </div>
         </nav>
-
     </header>
 
     <main>
         <section>
 
             <h2>Cadastre-se para participar</h2>
+
             <form>
+
                 <fieldset>
                     <legend>Dados pessoais</legend>
+
                     <label for="nome">Nome:</label>
                     <input
                         type="text"
@@ -46,9 +51,7 @@
                         required
                     >
 
-
                     <label for="email">E-mail:</label>
-
                     <input
                         type="email"
                         id="email"
@@ -56,8 +59,8 @@
                         placeholder="Digite seu e-mail"
                         required
                     >
-                    <label for="nascimento">Data de nascimento:</label>
 
+                    <label for="nascimento">Data de nascimento:</label>
                     <input
                         type="date"
                         id="nascimento"
@@ -66,13 +69,12 @@
                     >
 
                 </fieldset>
+
                 <fieldset>
 
                     <legend>Contato</legend>
 
-
                     <label for="telefone">Telefone:</label>
-
                     <input
                         type="tel"
                         id="telefone"
@@ -81,8 +83,8 @@
                         pattern="[0-9]{10,11}"
                         required
                     >
-                    <label for="cidade">Cidade:</label>
 
+                    <label for="cidade">Cidade:</label>
                     <input
                         type="text"
                         id="cidade"
@@ -90,13 +92,14 @@
                         placeholder="Digite sua cidade"
                         required
                     >
+
                 </fieldset>
 
                 <fieldset>
 
                     <legend>Documentos</legend>
-                    <label for="cpf">CPF:</label>
 
+                    <label for="cpf">CPF:</label>
                     <input
                         type="text"
                         id="cpf"
@@ -105,6 +108,7 @@
                         pattern="[0-9]{11}"
                         required
                     >
+
                     <label for="cep">CEP:</label>
                     <input
                         type="text"
@@ -114,12 +118,13 @@
                         pattern="[0-9]{8}"
                         required
                     >
+
                 </fieldset>
 
-
-
                 <fieldset>
+
                     <legend>Acesso</legend>
+
                     <label for="senha">Senha:</label>
                     <input
                         type="password"
@@ -130,13 +135,14 @@
                     >
 
                 </fieldset>
+
                 <button type="submit">
                     Cadastrar
                 </button>
+
             </form>
+
         </section>
-
-
     </main>
 
     <footer>
@@ -149,9 +155,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
 
-    <script src="formulario.js"></script>
+    <script type="module" src="formulario.js"></script>
 
 </body>
 </html>
