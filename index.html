@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Esperança</title>
+    <link rel="stylesheet" href="ong.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ONG Esperança</h1>
+
+        <nav>
+            <!-- Botão do menu para celular -->
+            <button class="menu-toggle" onclick="abrirMenu()">☰</button>
+
+            <div class="menu">
+
+                <a href="index.html">Início</a>
+
+                <div class="dropdown">
+                    <a href="projetos.html">Projetos ▼</a>
+
+                    <div class="submenu">
+                        <a href="#">Projeto Social</a>
+                        <a href="#">Voluntariado</a>
+                    </div>
+                </div>
+
+                <a href="cadastro.html">Cadastro</a>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section>
+            <h2>Bem-vindo à ONG Esperança</h2>
+
+            <p>
+                A ONG Esperança trabalha para ajudar pessoas
+                e promover ações sociais na comunidade.
+            </p>
+
+            <img src="imagens/images (1).jfif"
+                 alt="Pessoas participando de uma ação social da ONG">
+        </section>
+
+
+        <section>
+            <h2>Sobre nós</h2>
+
+            <p>
+                Nosso objetivo é desenvolver projetos sociais,
+                incentivar o voluntariado e ajudar pessoas
+                que precisam de apoio.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>Contato</h2>
+
+            <p>E-mail: contato@ongesperanca.org</p>
+            <p>Telefone: (11) 99999-9999</p>
+        </section>
+
+    </main>
+<section class="feedback-demo">
+
+    <h2>Componentes de Feedback</h2>
+
+    <span class="badge">Projeto ativo</span>
+
+    <div class="alerta">
+        <strong>Informação:</strong>
+        As inscrições para voluntários estão abertas.
+    </div>
+
+    <button onclick="mostrarToast()">
+        Mostrar notificação
+    </button>
+
+    <button onclick="abrirModal()">
+        Abrir informações
+    </button>
+
+    <div id="toast" class="toast">
+        Cadastro realizado com sucesso!
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-conteudo">
+            <h2>ONG Esperança</h2>
+
+            <p>
+                Obrigado pelo interesse em participar
+                das nossas ações sociais.
+            </p>
+
+            <button onclick="fecharModal()">
+                Fechar
+            </button>
+        </div>
+    </div>
+
+</section>
+
+    <footer>
+        <p>ONG Esperança - Todos os direitos reservados.</p>
+    </footer>
+
+
+    <!-- JavaScript do menu -->
+    <script>
+
+        function abrirMenu() {
+            document.querySelector(".menu").classList.toggle("menu-aberto");
+        }
+
+    </script>
+
+</body>
+</html>

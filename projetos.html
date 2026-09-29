@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - ONG Esperança</title>
+    <link rel="stylesheet" href="ong.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ONG Esperança</h1>
+
+        <nav>
+            <button class="menu-toggle" onclick="abrirMenu()">☰</button>
+
+            <div class="menu">
+
+                <a href="index.html">Início</a>
+
+                <div class="dropdown">
+                    <a href="projetos.html">Projetos ▼</a>
+
+                    <div class="submenu">
+                        <a href="#">Projeto Social</a>
+                        <a href="#">Voluntariado</a>
+                    </div>
+                </div>
+
+                <a href="cadastro.html">Cadastro</a>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section>
+            <h2>Nossos Projetos</h2>
+
+            <p>
+                Conheça as principais ações desenvolvidas
+                pela ONG Esperança.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>Campanhas de Doação</h2>
+
+            <p>
+                As doações ajudam a manter nossos projetos
+                e permitem atender mais pessoas da comunidade.
+            </p>
+
+            <ul>
+                <li>Doação de alimentos</li>
+                <li>Doação de roupas</li>
+                <li>Contribuição financeira</li>
+            </ul>
+
+            <a href="cadastro.html">Quero ajudar</a>
+        </section>
+
+
+        <section>
+            <h2>Voluntariado</h2>
+
+            <p>
+                Pessoas interessadas podem participar
+                voluntariamente das ações e projetos da ONG.
+            </p>
+
+            <ul>
+                <li>Participação em eventos</li>
+                <li>Distribuição de alimentos</li>
+                <li>Atividades comunitárias</li>
+            </ul>
+
+            <a href="cadastro.html">Quero ser voluntário</a>
+        </section>
+
+
+        <!-- FEEDBACK E STATUS -->
+
+        <section>
+            <h2>Feedback e Status</h2>
+
+            <span class="badge">Projeto ativo</span>
+
+            <div class="alerta">
+                <strong>Informação:</strong>
+                As inscrições para voluntários estão abertas.
+            </div>
+
+            <button type="button" onclick="mostrarToast()">
+                Mostrar Toast
+            </button>
+
+            <button type="button" onclick="abrirModal()">
+                Abrir Modal
+            </button>
+        </section>
+
+    </main>
+
+
+    <!-- TOAST -->
+
+    <div id="toast" class="toast" role="status" aria-live="polite">
+        Ação realizada com sucesso!
+    </div>
+
+
+    <!-- MODAL -->
+
+    <div id="modal" class="modal" role="dialog" aria-modal="true">
+
+        <div class="modal-conteudo">
+
+            <h2>ONG Esperança</h2>
+
+            <p>
+                Obrigado pelo interesse em participar
+                das nossas ações sociais.
+            </p>
+
+            <button type="button" onclick="fecharModal()">
+                Fechar
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>ONG Esperança - Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script>
+
+        function abrirMenu() {
+            document.querySelector(".menu").classList.toggle("menu-aberto");
+        }
+
+
+        function mostrarToast() {
+
+            const toast = document.getElementById("toast");
+
+            toast.style.display = "block";
+
+            setTimeout(function() {
+                toast.style.display = "none";
+            }, 3000);
+        }
+
+
+        function abrirModal() {
+
+            document.getElementById("modal").style.display = "flex";
+
+        }
+
+
+        function fecharModal() {
+
+            document.getElementById("modal").style.display = "none";
+
+        }
+
+    </script>
+
+</body>
+</html>
